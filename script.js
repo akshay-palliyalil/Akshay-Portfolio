@@ -50,7 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scrolled state
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const scrollY = window.scrollY;
+
+        if (scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
@@ -63,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 200)) {
+            if (scrollY >= (sectionTop - 250)) {
                 current = section.getAttribute('id');
             }
         });
