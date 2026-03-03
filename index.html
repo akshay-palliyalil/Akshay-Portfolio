@@ -15,6 +15,9 @@
 
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -55,7 +58,7 @@
 
         <div class="container hero-content">
             <div class="hero-text fade-in-up">
-                <span class="greeting">Hello, Identity Verified</span>
+                <span class="greeting">Hello, I am</span>
                 <h1 class="main-title">I'm <span class="gradient-text">Akshay</span></h1>
                 <h2 class="sub-title typing-text">A Passionate Unity Game Developer</h2>
                 <p class="hero-desc">
@@ -69,9 +72,15 @@
                 </div>
 
                 <div class="social-links">
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </div>
             </div>
 
@@ -202,8 +211,6 @@
                     </div>
                 </div>
             </div>
-
-        </div>
         </div>
     </section>
 
@@ -248,7 +255,7 @@
 
                 <!-- Skill Category 2 -->
                 <div class="skill-category glassmorphism fade-in-up" data-delay="200">
-                    <h3 class="gradient-text"><i class="fa-solid fa-server"></i> Core Compentencies</h3>
+                    <h3 class="gradient-text"><i class="fa-solid fa-server"></i> Core Competencies</h3>
                     <div class="skill-tags">
                         <span class="tag">Object Oriented Programming</span>
                         <span class="tag">Data Structures</span>
@@ -292,8 +299,10 @@
                             Your browser does not support the video tag.
                         </video>
                         <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="view-btn" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="view-btn" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -316,8 +325,10 @@
                                     type="video/mp4">
                         </video>
                         <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="view-btn" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="view-btn" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -337,8 +348,10 @@
                         <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1374&auto=format&fit=crop"
                              alt="2048 Game" class="project-img-elem">
                         <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="view-btn" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="view-btn" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -352,443 +365,29 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Connect</span>
-                <h2>Contact Me</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="contact-content grid-2">
-                <div class="contact-info-wrapper fade-in-up" data-delay="100">
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="card-info">
-                            <h3>Email Me</h3>
-                            <a href="mailto:contact@akshay.example">akshayakshy142@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
-                        <div class="card-info">
-                            <h3>Call Me</h3>
-                            <a href="tel:+911234567890">9656541130</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="card-info">
-                            <h3>Location</h3>
-                            <p>Kerala, India</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper glassmorphism fade-in-up" data-delay="200">
-                    <form class="contact-form" id="contactForm">
-                        <div class="input-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="input-group">
-                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content grid-2">
-                <div class="footer-logo">
-                    <h2>AKSHAY<span>.</span></h2>
-                    <p>Building beautiful interactive experiences.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Akshay. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Portfolio | Developer</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-<body>
-
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar glassmorphism">
-        <div class="nav-container">
-            <a href="#home" class="logo">AKSHAY<span>.P</span></a>
-
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-
-        <div class="container hero-content">
-            <div class="hero-text fade-in-up">
-                <span class="greeting">Hello, Identity Verified</span>
-                <h1 class="main-title">I'm <span class="gradient-text">Akshay</span></h1>
-                <h2 class="sub-title typing-text">A Passionate Unity Game Developer</h2>
-                <p class="hero-desc">
-                    Crafting immersive multiplayer experiences and interactive worlds with modern game
-                    engines.
-                </p>
-
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-secondary glass-btn">Contact Me</a>
-                </div>
-
-                <div class="social-links">
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="hero-image-wrapper fade-in-right">
-                <div class="hero-image glassmorphism">
-                    <!-- Replace src with an actual profile picture -->
-                    <img src="images/profile.jpg.jpeg" alt="Akshay Developer">
-                    <div class="floating-badge badge-1">
-                        <i class="fa-solid fa-code"></i> Developer
-                    </div>
-                    <div class="floating-badge badge-2">
-                        <i class="fa-solid fa-rocket"></i> Creative
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <a href="#about">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Discover</span>
-                <h2>About Me</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="about-content grid-2">
-                <div class="about-image glassmorphism slide-in-left">
-                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1470&auto=format&fit=crop"
-                         alt="Coding">
-                </div>
-
-                <div class="about-text slide-in-right">
-                    <h3 class="gradient-text">I'm a Unity Game Developer based in India</h3>
-                    <p>
-                        I am highly passionate about game design and building immersive interactive experiences. My
-                        journey began with simple 2D games, and now I develop complex 3D multiplayer environments.
-                    </p>
-                    <p>
-                        I thrive in environments where I can tackle complex logic and continuously learn new game engine
-                        technologies. When I'm not coding, you can find me analyzing game mechanics.
-                    </p>
-
-                    <ul class="about-info grid-2">
-                        <li><span class="label">Name:</span> <span>Akshay</span></li>
-                        <li><span class="label">Email:</span> <span>akshayakshy142@gmail.com</span></li>
-                        <li><span class="label">Role:</span> <span>Unity Game Developer</span></li>
-                        <li><span class="label">Location:</span> <span>India</span></li>
-                    </ul>
-
-                    <a href="resume/Akshay_Resume.pdf" download class="btn btn-primary mt-4">
-                        Download CV <i class="fa-solid fa-download"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section bg-darker">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Journey</span>
-                <h2>My Resume</h2>
-                <div class="line-decorator"></div>
-            </div>
-            <a href="resume/Akshay_Resume.pdf" class="btn btn-primary mt-4" download>
-                Download Resume <i class="fa-solid fa-download"></i>
-            </a>
-        </div>
-
-        <div class="resume-timeline">
-
-            <!-- Education Timeline -->
-            <div class="timeline-column fade-in-up" data-delay="100">
-                <h3 class="timeline-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-
-                <div class="timeline-box glassmorphism">
-                    <div class="timeline-item">
-                        <span class="time">2020 - 2024</span>
-                        <h4>Bachelor's Degree in Computer Science</h4>
-                        <span class="institute">University of Technology</span>
-                        <p>
-                            Studied data structures, algorithms, and core computer science concepts. Graduated with
-                            honors.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="time">2018 - 2020</span>
-                        <h4>Higher Secondary</h4>
-                        <span class="institute">ABC High School</span>
-                        <p>Focus on Mathematics and Computer Science.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience Timeline -->
-            <div class="timeline-column fade-in-up" data-delay="200">
-                <h3 class="timeline-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
-
-                <div class="timeline-box glassmorphism">
-                    <div class="timeline-item">
-                        <span class="time">2023 - Present</span>
-                        <h4>Unity Game Developer</h4>
-                        <span class="institute">Tech Innovations Inc.</span>
-                        <p>
-                            Developing multiplayer architectures and optimizing game performance for top-tier
-                            interactive experiences.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="time">2022 - 2023</span>
-                        <h4>Developer Intern</h4>
-                        <span class="institute">Startup Studios</span>
-                        <p>
-                            Assisted in game logic implementation and bug fixing for interactive Unity applications.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Proficiency</span>
-                <h2>Technical Skills</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="skills-grid">
-
-                <!-- Skill Category 1 -->
-                <div class="skill-category glassmorphism fade-in-up" data-delay="100">
-                    <h3 class="gradient-text"><i class="fa-solid fa-gamepad"></i> Game Dev</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Unity (2D &amp; 3D)</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 95%;"></span></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>C# & Game Logic</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 90%;"></span></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Multiplayer (Photon/Netcode)</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 85%;"></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Category 2 -->
-                <div class="skill-category glassmorphism fade-in-up" data-delay="200">
-                    <h3 class="gradient-text"><i class="fa-solid fa-server"></i> Core Compentencies</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Object Oriented Programming</span>
-                        <span class="tag">Data Structures</span>
-                        <span class="tag">Algorithms</span>
-                        <span class="tag">Version Control (Git)</span>
-                        <span class="tag">RESTful APIs</span>
-                        <span class="tag">Responsive Design</span>
-                        <span class="tag">UI/UX Principles</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section bg-darker">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Portfolio</span>
-                <h2>My Projects</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="portfolio-filter fade-in-up">
-                <button type="button" class="filter-btn active" data-filter="all">All</button>
-                <button type="button" class="filter-btn" data-filter="3d">3D Projects</button>
-                <button type="button" class="filter-btn" data-filter="2d">2D Projects</button>
-                <button type="button" class="filter-btn" data-filter="multiplayer">Multiplayer</button>
-            </div>
-
-            <div class="project-grid">
-
-                <!-- Project 1 (Video) -->
-                <div class="project-card glassmorphism fade-in-up item-3d item-multiplayer" data-delay="100">
+                <!-- Project 4 (Video) -->
+                <div class="project-card glassmorphism fade-in-up item-2d" data-delay="400">
                     <div class="project-media">
-                        <!-- Instructions: Place your video file (e.g., my_game.mp4) in the same folder as this index.html file,
-                             then change the src below to "my_game.mp4" -->
                         <video autoplay loop muted playsinline class="project-video">
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            <source src="videos/puzzleSlider.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="view-btn" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="view-btn" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-category">3D Multiplayer</span>
-                        <h3>Zombie Shooter</h3>
-                        <p>A fast-paced multiplayer 3D shooter game with real-time networking.</p>
-                        <div class="tech-stack">
-                            <span>Unity 3D</span>
-                            <span>Photon</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 (Video/Image hybrid structure) -->
-                <div class="project-card glassmorphism fade-in-up item-2d item-multiplayer" data-delay="200">
-                    <div class="project-media">
-                        <!-- Instructions: You can also use local video files here -->
-                        <video autoplay loop muted playsinline class="project-video">
-                            <source src="https://arweave.net/60JqK2bU9sR-iUqXZbB-P2c_N1HqE-c2y3Z1XzE-N-c"
-                                    type="video/mp4">
-                        </video>
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">2D Multiplayer</span>
-                        <h3>Angel Run</h3>
-                        <p>An interactive endless runner game with multiplayer leaderboard capabilities.</p>
+                        <span class="project-category">2D Puzzle</span>
+                        <h3>Puzzle Slider</h3>
+                        <p>
+                            A challenging sliding puzzle game with intelligent level generation and smooth 2D graphics.
+                        </p>
                         <div class="tech-stack">
                             <span>Unity 2D</span>
-                            <span>C#</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glassmorphism fade-in-up item-2d" data-delay="300">
-                    <div class="project-media">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1374&auto=format&fit=crop"
-                             alt="2048 Game" class="project-img-elem">
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">2D Casual</span>
-                        <h3>2048 Clone</h3>
-                        <p>A beautifully styled clone of the classic 2048 puzzle game with smooth animations.</p>
-                        <div class="tech-stack">
-                            <span>Unity</span>
-                            <span>Mobile</span>
+                            <span>C# Logic</span>
                         </div>
                     </div>
                 </div>
@@ -812,7 +411,7 @@
                         <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
                         <div class="card-info">
                             <h3>Email Me</h3>
-                            <a href="mailto:contact@akshay.example">akshayakshy142@gmail.com</a>
+                            <a href="mailto:akshayakshy142@gmail.com">akshayakshy142@gmail.com</a>
                         </div>
                     </div>
 
@@ -820,7 +419,7 @@
                         <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
                         <div class="card-info">
                             <h3>Call Me</h3>
-                            <a href="tel:+911234567890">9656541130</a>
+                            <a href="tel:+919656541130">9656541130</a>
                         </div>
                     </div>
 
@@ -836,16 +435,17 @@
                 <div class="contact-form-wrapper glassmorphism fade-in-up" data-delay="200">
                     <form class="contact-form" id="contactForm">
                         <div class="input-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
                         </div>
                         <div class="input-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="reply_to" placeholder="Your Email" required>
                         </div>
                         <div class="input-group">
-                            <input type="text" id="subject" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="input-group">
-                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                      required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary submit-btn">
                             <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
@@ -865,891 +465,9 @@
                     <p>Building beautiful interactive experiences.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Akshay. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Portfolio | Developer</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-<body>
-
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar glassmorphism">
-        <div class="nav-container">
-            <a href="#home" class="logo">AKSHAY<span>.P</span></a>
-
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-
-        <div class="container hero-content">
-            <div class="hero-text fade-in-up">
-                <span class="greeting">Hello, Identity Verified</span>
-                <h1 class="main-title">I'm <span class="gradient-text">Akshay</span></h1>
-                <h2 class="sub-title typing-text">A Passionate Unity Game Developer</h2>
-                <p class="hero-desc">
-                    Crafting immersive multiplayer experiences and interactive worlds with modern game
-                    engines.
-                </p>
-
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-secondary glass-btn">Contact Me</a>
-                </div>
-
-                <div class="social-links">
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="hero-image-wrapper fade-in-right">
-                <div class="hero-image glassmorphism">
-                    <!-- Replace src with an actual profile picture -->
-                    <img src="images/profile.jpg.jpeg" alt="Akshay Developer">
-                    <div class="floating-badge badge-1">
-                        <i class="fa-solid fa-code"></i> Developer
-                    </div>
-                    <div class="floating-badge badge-2">
-                        <i class="fa-solid fa-rocket"></i> Creative
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <a href="#about">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Discover</span>
-                <h2>About Me</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="about-content grid-2">
-                <div class="about-image glassmorphism slide-in-left">
-                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1470&auto=format&fit=crop"
-                         alt="Coding">
-                </div>
-
-                <div class="about-text slide-in-right">
-                    <h3 class="gradient-text">I'm a Unity Game Developer based in India</h3>
-                    <p>
-                        I am highly passionate about game design and building immersive interactive experiences. My
-                        journey began with simple 2D games, and now I develop complex 3D multiplayer environments.
-                    </p>
-                    <p>
-                        I thrive in environments where I can tackle complex logic and continuously learn new game engine
-                        technologies. When I'm not coding, you can find me analyzing game mechanics.
-                    </p>
-
-                    <ul class="about-info grid-2">
-                        <li><span class="label">Name:</span> <span>Akshay</span></li>
-                        <li><span class="label">Email:</span> <span>akshayakshy142@gmail.com</span></li>
-                        <li><span class="label">Role:</span> <span>Unity Game Developer</span></li>
-                        <li><span class="label">Location:</span> <span>India</span></li>
-                    </ul>
-
-                    <a href="resume/Akshay_Resume.pdf" download class="btn btn-primary mt-4">
-                        Download CV <i class="fa-solid fa-download"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section bg-darker">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Journey</span>
-                <h2>My Resume</h2>
-                <div class="line-decorator"></div>
-            </div>
-            <a href="resume/Akshay_Resume.pdf" class="btn btn-primary mt-4" download>
-                Download Resume <i class="fa-solid fa-download"></i>
-            </a>
-        </div>
-
-        <div class="resume-timeline">
-
-            <!-- Education Timeline -->
-            <div class="timeline-column fade-in-up" data-delay="100">
-                <h3 class="timeline-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-
-                <div class="timeline-box glassmorphism">
-                    <div class="timeline-item">
-                        <span class="time">2020 - 2024</span>
-                        <h4>Bachelor's Degree in Computer Science</h4>
-                        <span class="institute">University of Technology</span>
-                        <p>
-                            Studied data structures, algorithms, and core computer science concepts. Graduated with
-                            honors.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="time">2018 - 2020</span>
-                        <h4>Higher Secondary</h4>
-                        <span class="institute">ABC High School</span>
-                        <p>Focus on Mathematics and Computer Science.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience Timeline -->
-            <div class="timeline-column fade-in-up" data-delay="200">
-                <h3 class="timeline-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
-
-                <div class="timeline-box glassmorphism">
-                    <div class="timeline-item">
-                        <span class="time">2023 - Present</span>
-                        <h4>Unity Game Developer</h4>
-                        <span class="institute">Tech Innovations Inc.</span>
-                        <p>
-                            Developing multiplayer architectures and optimizing game performance for top-tier
-                            interactive experiences.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="time">2022 - 2023</span>
-                        <h4>Developer Intern</h4>
-                        <span class="institute">Startup Studios</span>
-                        <p>
-                            Assisted in game logic implementation and bug fixing for interactive Unity applications.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Proficiency</span>
-                <h2>Technical Skills</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="skills-grid">
-
-                <!-- Skill Category 1 -->
-                <div class="skill-category glassmorphism fade-in-up" data-delay="100">
-                    <h3 class="gradient-text"><i class="fa-solid fa-gamepad"></i> Game Dev</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Unity (2D &amp; 3D)</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 95%;"></span></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>C# & Game Logic</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 90%;"></span></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Multiplayer (Photon/Netcode)</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 85%;"></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Category 2 -->
-                <div class="skill-category glassmorphism fade-in-up" data-delay="200">
-                    <h3 class="gradient-text"><i class="fa-solid fa-server"></i> Core Compentencies</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Object Oriented Programming</span>
-                        <span class="tag">Data Structures</span>
-                        <span class="tag">Algorithms</span>
-                        <span class="tag">Version Control (Git)</span>
-                        <span class="tag">RESTful APIs</span>
-                        <span class="tag">Responsive Design</span>
-                        <span class="tag">UI/UX Principles</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section bg-darker">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Portfolio</span>
-                <h2>My Projects</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="portfolio-filter fade-in-up">
-                <button type="button" class="filter-btn active" data-filter="all">All</button>
-                <button type="button" class="filter-btn" data-filter="3d">3D Projects</button>
-                <button type="button" class="filter-btn" data-filter="2d">2D Projects</button>
-                <button type="button" class="filter-btn" data-filter="multiplayer">Multiplayer</button>
-            </div>
-
-            <div class="project-grid">
-
-                <!-- Project 1 (Video) -->
-                <div class="project-card glassmorphism fade-in-up item-3d item-multiplayer" data-delay="100">
-                    <div class="project-media">
-                        <!-- Instructions: Place your video file (e.g., my_game.mp4) in the same folder as this index.html file,
-                             then change the src below to "my_game.mp4" -->
-                        <video autoplay loop muted playsinline class="project-video">
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">3D Multiplayer</span>
-                        <h3>Zombie Shooter</h3>
-                        <p>A fast-paced multiplayer 3D shooter game with real-time networking.</p>
-                        <div class="tech-stack">
-                            <span>Unity 3D</span>
-                            <span>Photon</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 (Video/Image hybrid structure) -->
-                <div class="project-card glassmorphism fade-in-up item-2d item-multiplayer" data-delay="200">
-                    <div class="project-media">
-                        <!-- Instructions: You can also use local video files here -->
-                        <video autoplay loop muted playsinline class="project-video">
-                            <source src="https://arweave.net/60JqK2bU9sR-iUqXZbB-P2c_N1HqE-c2y3Z1XzE-N-c"
-                                    type="video/mp4">
-                        </video>
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">2D Multiplayer</span>
-                        <h3>Angel Run</h3>
-                        <p>An interactive endless runner game with multiplayer leaderboard capabilities.</p>
-                        <div class="tech-stack">
-                            <span>Unity 2D</span>
-                            <span>C#</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glassmorphism fade-in-up item-2d" data-delay="300">
-                    <div class="project-media">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1374&auto=format&fit=crop"
-                             alt="2048 Game" class="project-img-elem">
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">2D Casual</span>
-                        <h3>2048 Clone</h3>
-                        <p>A beautifully styled clone of the classic 2048 puzzle game with smooth animations.</p>
-                        <div class="tech-stack">
-                            <span>Unity</span>
-                            <span>Mobile</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Connect</span>
-                <h2>Contact Me</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="contact-content grid-2">
-                <div class="contact-info-wrapper fade-in-up" data-delay="100">
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="card-info">
-                            <h3>Email Me</h3>
-                            <a href="mailto:contact@akshay.example">akshayakshy142@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
-                        <div class="card-info">
-                            <h3>Call Me</h3>
-                            <a href="tel:+911234567890">9656541130</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="card-info">
-                            <h3>Location</h3>
-                            <p>Kerala, India</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper glassmorphism fade-in-up" data-delay="200">
-                    <form class="contact-form" id="contactForm">
-                        <div class="input-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="input-group">
-                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content grid-2">
-                <div class="footer-logo">
-                    <h2>AKSHAY<span>.</span></h2>
-                    <p>Building beautiful interactive experiences.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Akshay. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Portfolio | Developer</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-<body>
-
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar glassmorphism">
-        <div class="nav-container">
-            <a href="#home" class="logo">AKSHAY<span>.P</span></a>
-
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-
-        <div class="container hero-content">
-            <div class="hero-text fade-in-up">
-                <span class="greeting">Hello, Identity Verified</span>
-                <h1 class="main-title">I'm <span class="gradient-text">Akshay</span></h1>
-                <h2 class="sub-title typing-text">A Passionate Unity Game Developer</h2>
-                <p class="hero-desc">
-                    Crafting immersive multiplayer experiences and interactive worlds with modern game
-                    engines.
-                </p>
-
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-secondary glass-btn">Contact Me</a>
-                </div>
-
-                <div class="social-links">
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="hero-image-wrapper fade-in-right">
-                <div class="hero-image glassmorphism">
-                    <!-- Replace src with an actual profile picture -->
-                    <img src="images/profile.jpg.jpeg" alt="Akshay Developer">
-                    <div class="floating-badge badge-1">
-                        <i class="fa-solid fa-code"></i> Developer
-                    </div>
-                    <div class="floating-badge badge-2">
-                        <i class="fa-solid fa-rocket"></i> Creative
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <a href="#about">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Discover</span>
-                <h2>About Me</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="about-content grid-2">
-                <div class="about-image glassmorphism slide-in-left">
-                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1470&auto=format&fit=crop"
-                         alt="Coding">
-                </div>
-
-                <div class="about-text slide-in-right">
-                    <h3 class="gradient-text">I'm a Unity Game Developer based in India</h3>
-                    <p>
-                        I am highly passionate about game design and building immersive interactive experiences. My
-                        journey began with simple 2D games, and now I develop complex 3D multiplayer environments.
-                    </p>
-                    <p>
-                        I thrive in environments where I can tackle complex logic and continuously learn new game engine
-                        technologies. When I'm not coding, you can find me analyzing game mechanics.
-                    </p>
-
-                    <ul class="about-info grid-2">
-                        <li><span class="label">Name:</span> <span>Akshay</span></li>
-                        <li><span class="label">Email:</span> <span>akshayakshy142@gmail.com</span></li>
-                        <li><span class="label">Role:</span> <span>Unity Game Developer</span></li>
-                        <li><span class="label">Location:</span> <span>India</span></li>
-                    </ul>
-
-                    <a href="resume/Akshay_Resume.pdf" download class="btn btn-primary mt-4">
-                        Download CV <i class="fa-solid fa-download"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section bg-darker">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Journey</span>
-                <h2>My Resume</h2>
-                <div class="line-decorator"></div>
-            </div>
-            <a href="resume/Akshay_Resume.pdf" class="btn btn-primary mt-4" download>
-                Download Resume <i class="fa-solid fa-download"></i>
-            </a>
-        </div>
-
-        <div class="resume-timeline">
-
-            <!-- Education Timeline -->
-            <div class="timeline-column fade-in-up" data-delay="100">
-                <h3 class="timeline-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-
-                <div class="timeline-box glassmorphism">
-                    <div class="timeline-item">
-                        <span class="time">2020 - 2024</span>
-                        <h4>Bachelor's Degree in Computer Science</h4>
-                        <span class="institute">University of Technology</span>
-                        <p>
-                            Studied data structures, algorithms, and core computer science concepts. Graduated with
-                            honors.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="time">2018 - 2020</span>
-                        <h4>Higher Secondary</h4>
-                        <span class="institute">ABC High School</span>
-                        <p>Focus on Mathematics and Computer Science.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience Timeline -->
-            <div class="timeline-column fade-in-up" data-delay="200">
-                <h3 class="timeline-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
-
-                <div class="timeline-box glassmorphism">
-                    <div class="timeline-item">
-                        <span class="time">2023 - Present</span>
-                        <h4>Unity Game Developer</h4>
-                        <span class="institute">Tech Innovations Inc.</span>
-                        <p>
-                            Developing multiplayer architectures and optimizing game performance for top-tier
-                            interactive experiences.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="time">2022 - 2023</span>
-                        <h4>Developer Intern</h4>
-                        <span class="institute">Startup Studios</span>
-                        <p>
-                            Assisted in game logic implementation and bug fixing for interactive Unity applications.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Proficiency</span>
-                <h2>Technical Skills</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="skills-grid">
-
-                <!-- Skill Category 1 -->
-                <div class="skill-category glassmorphism fade-in-up" data-delay="100">
-                    <h3 class="gradient-text"><i class="fa-solid fa-gamepad"></i> Game Dev</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Unity (2D &amp; 3D)</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 95%;"></span></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>C# & Game Logic</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 90%;"></span></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Multiplayer (Photon/Netcode)</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress-line"><span class="progress" style="width: 85%;"></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Category 2 -->
-                <div class="skill-category glassmorphism fade-in-up" data-delay="200">
-                    <h3 class="gradient-text"><i class="fa-solid fa-server"></i> Core Compentencies</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Object Oriented Programming</span>
-                        <span class="tag">Data Structures</span>
-                        <span class="tag">Algorithms</span>
-                        <span class="tag">Version Control (Git)</span>
-                        <span class="tag">RESTful APIs</span>
-                        <span class="tag">Responsive Design</span>
-                        <span class="tag">UI/UX Principles</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section bg-darker">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Portfolio</span>
-                <h2>My Projects</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="portfolio-filter fade-in-up">
-                <button type="button" class="filter-btn active" data-filter="all">All</button>
-                <button type="button" class="filter-btn" data-filter="3d">3D Projects</button>
-                <button type="button" class="filter-btn" data-filter="2d">2D Projects</button>
-                <button type="button" class="filter-btn" data-filter="multiplayer">Multiplayer</button>
-            </div>
-
-            <div class="project-grid">
-
-                <!-- Project 1 (Video) -->
-                <div class="project-card glassmorphism fade-in-up item-3d item-multiplayer" data-delay="100">
-                    <div class="project-media">
-                        <!-- Instructions: Place your video file (e.g., my_game.mp4) in the same folder as this index.html file,
-                             then change the src below to "my_game.mp4" -->
-                        <video autoplay loop muted playsinline class="project-video">
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">3D Multiplayer</span>
-                        <h3>Zombie Shooter</h3>
-                        <p>A fast-paced multiplayer 3D shooter game with real-time networking.</p>
-                        <div class="tech-stack">
-                            <span>Unity 3D</span>
-                            <span>Photon</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 (Video/Image hybrid structure) -->
-                <div class="project-card glassmorphism fade-in-up item-2d item-multiplayer" data-delay="200">
-                    <div class="project-media">
-                        <!-- Instructions: You can also use local video files here -->
-                        <video autoplay loop muted playsinline class="project-video">
-                            <source src="https://arweave.net/60JqK2bU9sR-iUqXZbB-P2c_N1HqE-c2y3Z1XzE-N-c"
-                                    type="video/mp4">
-                        </video>
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">2D Multiplayer</span>
-                        <h3>Angel Run</h3>
-                        <p>An interactive endless runner game with multiplayer leaderboard capabilities.</p>
-                        <div class="tech-stack">
-                            <span>Unity 2D</span>
-                            <span>C#</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glassmorphism fade-in-up item-2d" data-delay="300">
-                    <div class="project-media">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1374&auto=format&fit=crop"
-                             alt="2048 Game" class="project-img-elem">
-                        <div class="project-overlay">
-                            <a href="#" class="view-btn"><i class="fa-solid fa-link"></i></a>
-                            <a href="#" class="view-btn"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">2D Casual</span>
-                        <h3>2048 Clone</h3>
-                        <p>A beautifully styled clone of the classic 2048 puzzle game with smooth animations.</p>
-                        <div class="tech-stack">
-                            <span>Unity</span>
-                            <span>Mobile</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <div class="section-title fade-in-up">
-                <span class="subtitle">Connect</span>
-                <h2>Contact Me</h2>
-                <div class="line-decorator"></div>
-            </div>
-
-            <div class="contact-content grid-2">
-                <div class="contact-info-wrapper fade-in-up" data-delay="100">
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="card-info">
-                            <h3>Email Me</h3>
-                            <a href="mailto:contact@akshay.example">akshayakshy142@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
-                        <div class="card-info">
-                            <h3>Call Me</h3>
-                            <a href="tel:+911234567890">9656541130</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card glassmorphism">
-                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="card-info">
-                            <h3>Location</h3>
-                            <p>Kerala, India</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper glassmorphism fade-in-up" data-delay="200">
-                    <form class="contact-form" id="contactForm">
-                        <div class="input-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="input-group">
-                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content grid-2">
-                <div class="footer-logo">
-                    <h2>AKSHAY<span>.</span></h2>
-                    <p>Building beautiful interactive experiences.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
