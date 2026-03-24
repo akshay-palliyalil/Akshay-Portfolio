@@ -166,6 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-right, .slide-in-left, .slide-in-right');
     animatedElements.forEach(el => observer.observe(el));
 
+    // Set progress bar widths from data-attributes
+    const progressBars = document.querySelectorAll('.progress');
+    progressBars.forEach(bar => {
+        const width = bar.getAttribute('data-progress');
+        if (width) {
+            bar.style.width = width;
+        }
+    });
+
 
     /* ====================================================
        Project Filtering
@@ -198,6 +207,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+    });
+
+
+    /* ====================================================
+       Video Playback handling
+       ==================================================== */
+    const projectVideos = document.querySelectorAll('.project-video');
+
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.play().catch(err => {
+                    console.warn("Video playback failed:", err);
+                });
+            } else {
+                entry.target.pause();
+            }
+        });
+    }, { threshold: 0.5 }); // Play when at least 50% of the video is visible
+
+    projectVideos.forEach(video => {
+        // Ensure muted and playsinline are set (standard browser requirements for programatic play)
+        video.muted = true;
+        video.playsInline = true;
+        videoObserver.observe(video);
     });
 
 

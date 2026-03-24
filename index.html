@@ -21,8 +21,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Outfit:wght@300;400;500;600;700;800&amp;display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Outfit:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -116,7 +117,7 @@
                 </div>
             </div>
             <div class="scroll-down">
-                <a href="#about">
+                <a href="#about" aria-label="Scroll down to About section">
                     <div class="mouse">
                         <div class="wheel"></div>
                     </div>
@@ -136,7 +137,7 @@
                 <div class="about-content grid-2">
                     <div class="about-image glassmorphism slide-in-left">
                         <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&amp;w=1470&amp;auto=format&amp;fit=crop"
-                             alt="Coding">
+                            alt="Coding">
                     </div>
 
                     <div class="about-text slide-in-right">
@@ -253,21 +254,21 @@
                                     <span>Unity (2D &amp; 3D)</span>
                                     <span>95%</span>
                                 </div>
-                                <div class="progress-line"><span class="progress" style="width: 95%;"></span></div>
+                                <div class="progress-line"><span class="progress" data-progress="95%"></span></div>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-info">
-                                    <span>C# & Game Logic</span>
+                                    <span>C# &amp; Game Logic</span>
                                     <span>90%</span>
                                 </div>
-                                <div class="progress-line"><span class="progress" style="width: 90%;"></span></div>
+                                <div class="progress-line"><span class="progress" data-progress="90%"></span></div>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-info">
                                     <span>Multiplayer (Photon/Netcode)</span>
                                     <span>85%</span>
                                 </div>
-                                <div class="progress-line"><span class="progress" style="width: 85%;"></span></div>
+                                <div class="progress-line"><span class="progress" data-progress="85%"></span></div>
                             </div>
                         </div>
                     </div>
@@ -343,7 +344,7 @@
                             <!-- Instructions: You can also use local video files here -->
                             <video loop muted playsinline class="project-video">
                                 <source src="https://arweave.net/60JqK2bU9sR-iUqXZbB-P2c_N1HqE-c2y3Z1XzE-N-c"
-                                        type="video/mp4">
+                                    type="video/mp4">
                             </video>
                             <div class="project-overlay">
                                 <a href="#" class="view-btn" aria-label="View Project">
@@ -369,7 +370,7 @@
                     <div class="project-card glassmorphism fade-in-up item-2d" data-delay="300">
                         <div class="project-media">
                             <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&amp;w=1374&amp;auto=format&amp;fit=crop"
-                                 alt="2048 Game" class="project-img-elem">
+                                alt="2048 Game" class="project-img-elem">
                             <div class="project-overlay">
                                 <a href="#" class="view-btn" aria-label="View Project">
                                     <i class="fa-solid fa-link"></i>
@@ -410,8 +411,7 @@
                             <span class="project-category">2D Puzzle</span>
                             <h3>Puzzle Slider</h3>
                             <p>
-                                A challenging sliding puzzle game with intelligent level generation and smooth 2D
-                                graphics.
+                                A 2D sliding puzzle game with shuffle logic, move counter, and timer.
                             </p>
                             <div class="tech-stack">
                                 <span>Unity 2D</span>
@@ -477,7 +477,7 @@
                             <div class="input-group">
                                 <label for="message" class="sr-only">Your Message</label>
                                 <textarea id="message" name="message" rows="5" placeholder="Your Message"
-                                          required></textarea>
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary submit-btn">
                                 <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
